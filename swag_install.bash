@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 TMP_FOLDER=$(mktemp -d)
 CONFIG_FILE='swag.conf'
@@ -10,8 +10,8 @@ COIN_REPO='https://github.com/Cry-ptos/Swagger'
 COIN_TGZ='https://github.com/galimba/testing/raw/master/bin.zip'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='Swagger'
-COIN_PORT=7332
-RPC_PORT=6250
+COIN_PORT=1121
+RPC_PORT=1220
 
 NODEIP=$(curl -s4 icanhazip.com)
 
